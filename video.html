@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daftar Video</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0a0a0a;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      background-color: #1c1c1c;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #00ccff;
+    }
+
+    .container {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .video-card {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .video-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .thumbnail {
+      background-color: #333;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .video-info {
+      padding: 1rem;
+    }
+
+    .video-info h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .video-info p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .video-info a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.4rem 1rem;
+      background-color: #00ccff;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav {
+      background: #111;
+      padding: 0.5rem 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #00ccff;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="kategori.html">Kategori</a>
+    <a href="video.html">Video</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+
+  <header>
+    <h1>Daftar Video</h1>
+  </header>
+
+  <div class="container">
+    <div class="video-card">
+      <div class="thumbnail" style="background-image: url('https://placehold.co/300x150?text=Video+1');"></div>
+      <div class="video-info">
+        <h2>Judul Video 1</h2>
+        <p>Deskripsi singkat video pertama.</p>
+        <a href="#">Tonton</a>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="thumbnail" style="background-image: url('https://placehold.co/300x150?text=Video+2');"></div>
+      <div class="video-info">
+        <h2>Judul Video 2</h2>
+        <p>Deskripsi singkat video kedua.</p>
+        <a href="#">Tonton</a>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="thumbnail" style="background-image: url('https://placehold.co/300x150?text=Video+3');"></div>
+      <div class="video-info">
+        <h2>Judul Video 3</h2>
+        <p>Deskripsi singkat video ketiga.</p>
+        <a href="#">Tonton</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
